@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_carinfor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="keller.com.second_hand_car.activity.CarinforActivity">
+    <RelativeLayout
+        android:id="@+id/top3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/iretButut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/back_return"
+            android:onClick="my_ret"/>
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="宝马 五系"
+            android:textSize="21sp" />
+
+        <ImageButton
+            android:id="@+id/collection"
+            android:onClick="collectionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/myshoucang"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <keller.com.second_hand_car.Adapter.ImageAdapter.NetworkImageIndicatorView
+                android:id="@+id/network_indicate_view11"
+                android:layout_width="match_parent"
+                android:layout_height="240dp" />
+            <!--<ImageSwitcher
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/infoImg"
+                    android:layout_width="400dp"
+                    android:layout_height="280dp"
+                    android:background="@drawable/baoma" />
+            </ImageSwitcher>-->
+
+            <TextView
+                android:id="@+id/infoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="宝马 五系 2014款 2.0T 自动  豪华设计套餐"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/inforPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="36.5万"
+                android:textColor="#ff0202"
+                android:textSize="30dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+
+                android:adjustViewBounds="true"
+                android:background="@drawable/info1" />
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff5a37"
+        android:text="预定"
+        android:textSize="20sp"
+        android:onClick="buyCar"/>
+
+
+</LinearLayout>

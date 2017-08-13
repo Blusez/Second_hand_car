@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="keller.com.second_hand_car.fragment.ContactsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--是否保持宽高比-->
+        <ImageView
+            android:id="@+id/Msale"
+            android:layout_width="match_parent"
+            android:scaleType="centerInside"
+
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/slacar"/>
+    </ScrollView>
+
+
+</FrameLayout>

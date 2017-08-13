@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_car_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="keller.com.second_hand_car.activity.CarScanHisActivity">
+    <RelativeLayout
+        android:id="@+id/top2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/cback2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back_return"
+            android:onClick="mback"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="历史记录"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <keller.com.second_hand_car.view.XListView
+        android:id="@+id/xListView5"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:cacheColorHint="#00000000">
+    </keller.com.second_hand_car.view.XListView>
+
+</LinearLayout>
+

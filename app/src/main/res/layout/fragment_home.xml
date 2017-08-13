@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="keller.com.second_hand_car.fragment.SessionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80sp"-->
+        <!--android:text="300辆车"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="50sp"/>-->
+        <TextView
+            android:id="@+id/myhmCount"
+            android:layout_width="wrap_content"
+            android:layout_height="107dp"
+            android:background="@drawable/carcount"
+            android:text="159"
+            android:textColor="#ff5a37"
+            android:gravity="left|bottom"
+            android:textSize="50sp"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@drawable/buy"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@drawable/sale"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="今日推荐"/>
+        <keller.com.second_hand_car.view.XListView
+            android:id="@+id/xListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"></keller.com.second_hand_car.view.XListView>
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

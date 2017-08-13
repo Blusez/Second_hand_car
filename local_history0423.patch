@@ -1,0 +1,78 @@
+Index: app/src/main/java/keller/com/second_hand_car/fragment/HomeFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/keller/com/second_hand_car/fragment/HomeFragment.java	(revision )
++++ app/src/main/java/keller/com/second_hand_car/fragment/HomeFragment.java	(revision )
+@@ -32,6 +32,7 @@
+     private Handler mHandler;
+     private int start = 0;
+     private static int refreshCnt = 0;
++    List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+     public HomeFragment() {
+         // Required empty public constructor
+     }
+@@ -73,32 +74,34 @@
+     }
+ 
+     private List<Map<String, Object>> getData() {
+-        List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+ 
++
+         Map<String, Object> map = new HashMap<String, Object>();
+         map.put("title", "G1");
+         map.put("info", "google 1");
+         map.put("img", R.drawable.car);
+         list.add(map);
+-
+         map = new HashMap<String, Object>();
+         map.put("title", "G2");
+         map.put("info", "google 2");
+         map.put("img", R.drawable.car);
+         list.add(map);
+-
+         map = new HashMap<String, Object>();
+         map.put("title", "G3");
+         map.put("info", "google 3");
+         map.put("img", R.drawable.car);
+         list.add(map);
+-
+         return list;
+     }
+ 
++    private void getImage(){
+-
++        
++    }
++
++
+     @Override
+     public void onActivityCreated(Bundle savedInstanceState) {
++        initData();
+         initListener();
+         super.onActivityCreated(savedInstanceState);
+     }
+@@ -139,8 +142,8 @@
+         mHandler.postDelayed(new Runnable() {
+             @Override
+             public void run() {
+-                getData();
+                 geneItems();
++                getData();
+                 mAdapter.notifyDataSetChanged();
+                 onLoad();
+             }
+@@ -150,6 +153,12 @@
+ 
+ 
+     private void initListener() {
++
++    }
++
++    private void initData() {
++        //需要获取connection
++        //得到花名册对象
+ 
+     }
+ 

@@ -1,0 +1,257 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SaleCarActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back_return"
+            android:onClick="my_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="立刻报价"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/showImg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:onClick="showImage"
+            android:src="@drawable/baoma"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_login_div"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/saPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="2dp"
+            android:hint="预期价格"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:src="@drawable/back_right" />
+
+        <TextView
+            android:id="@+id/fenge12"
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="#DCDCDC"
+            android:ems="1" />
+
+
+        <EditText
+            android:id="@+id/sacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="49dp"
+            android:layout_marginStart="49dp"
+            android:hint="车牌城市"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:src="@drawable/back_right" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#DCDCDC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/accountEt"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:hint="车辆名称"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"/>
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/saName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:hint="请选择车辆"
+            android:textSize="21dp" />
+    </LinearLayout>
+    <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="0.5dip"
+         android:background="#DCDCDC" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/timeText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="上牌时间"
+                android:inputType="text"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/satvtime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="请选择"
+                android:textSize="21dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/fenge123"
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="#DCDCDC"
+            android:ems="1" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+            android:id="@+id/MileageText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="表显里程"
+            android:textSize="20sp"
+            android:textStyle="normal|bold" />
+            <EditText
+                android:id="@+id/sddistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="请选择"
+                android:textSize="21dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#DCDCDC" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="车况等级："
+            android:textSize="21dp"
+            android:textStyle="normal|bold" />
+        <EditText
+            android:id="@+id/ddda"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="良好"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#DCDCDC" />
+    <Button
+        android:id="@+id/subBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_button_div"
+        android:text="提交资料"
+        android:textColor="#FFFFFF"
+        android:onClick="sSubmit"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#DCDCDC" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="输入信息获得真实报价！"
+        android:textSize="17dp"
+        android:textColor="#808080"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="7天内只能提交一次车辆信息！"
+        android:textSize="17dp"
+        android:textColor="#808080"/>
+</LinearLayout>

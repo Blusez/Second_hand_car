@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="keller.com.second_hand_car.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/myt"
+        android:background="#f9f3f2"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+     >
+<!--android:visibility="gone"-->
+
+        <FrameLayout
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+<!--@drawable/search_icon-->
+            <EditText
+                android:id="@+id/search_et_input"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/sousuo1"
+                android:layout_margin="8dp"
+                android:drawablePadding="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/search_edittext_shape"
+                android:textSize="16sp"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:hint="请输入关键字"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/iv_delete_bg"
+                android:id="@+id/search_iv_delete"
+                android:layout_gravity="right|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/search_btn_back"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/btn_search_bg"
+            android:layout_width="64dp"
+            android:layout_height="40dp"
+            android:text="搜索"
+            android:textColor="@color/color_white"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        ></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+    </LinearLayout>
+</LinearLayout>

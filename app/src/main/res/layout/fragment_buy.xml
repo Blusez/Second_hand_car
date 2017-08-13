@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="keller.com.second_hand_car.fragment.ContactsFragment">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:entries="@array/paixu"
+                android:padding="0dp" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/brand"
+                android:padding="0dp" />
+
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/price"
+                android:padding="0dp" />
+
+            <!--<Spinner
+                android:id="@+id/spinner5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/xuanze"
+                android:padding="0dp" />-->
+
+        </LinearLayout>
+        <keller.com.second_hand_car.view.XListView
+            android:id="@+id/xListView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"></keller.com.second_hand_car.view.XListView>
+    </LinearLayout>
+
+</FrameLayout>

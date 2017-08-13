@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_guess_price"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="keller.com.second_hand_car.activity.GuessPriceActivity">
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/back_return"
+            android:onClick="mback"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="车辆估价"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="上牌时间"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/litime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="输入上牌时间"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="2dp"
+        android:background="#d6d3d3"
+        android:ems="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="选择品牌"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/mBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="输入品牌"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="2dp"
+        android:background="#d6d3d3"
+        android:ems="1" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="查询城市"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/m_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="输入查询城市"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="2dp"
+        android:background="#d6d3d3"
+        android:ems="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="表显里程"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/mdistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="输入上牌时间"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="万公里"
+            android:textStyle="normal|bold"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="349dp"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="2dp"
+        android:background="#d6d3d3"
+        android:ems="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="车况等级"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/mgrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="良好"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/fenge12"
+        android:layout_width="349dp"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="2dp"
+        android:background="#d6d3d3"
+        android:ems="1" />
+
+    <Button
+        android:id="@+id/msubBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_button_div"
+        android:text="立即查询"
+        android:textColor="#FFFFFF"
+        android:onClick="guessPrice"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+
+        android:text="您将获得全国领先二手车平台价格指导"
+        android:textSize="17dp"
+        android:textColor="#808080"/>
+
+
+</LinearLayout>

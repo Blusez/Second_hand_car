@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="paixu">
+        <item>默认排序</item>
+        <item>价格最低</item>
+        <item>价格最高</item>
+        <item>里程最短</item>
+    </string-array>
+    <string-array name="brand">
+        <item>品牌</item>
+        <item>宝马</item>
+        <item>奔驰</item>
+        <item>大众</item>
+        <item>本田</item>
+    </string-array>
+    <string-array name="price">
+        <item>价格</item>
+        <item>5万以内</item>
+        <item>5万~10万</item>
+        <item>10万~20万</item>
+        <item>20万以上</item>
+    </string-array>
+</resources>
